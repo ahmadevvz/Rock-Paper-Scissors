@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors Game</h1>
+        <div class="game-area">
+            <div class="user-area">
+                <h2>Choose your move:</h2>
+                <div class="user-options  options">
+
+                </div>
+            </div>
+            <div class="comp-area">
+                <h2>Computer's move:</h2>
+                <div id="compArea" class="comp-area options">
+                    <button class="option-button">
+                        <img src="./assets/rock.png" alt="Rock">
+                    </button>
+                </div>
+            </div>
+        </div>
+            <div class="result-area">
+                <div id="resultText">Make your move!</div>
+            </div>
+            <div class="score-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 10px;">
+                <h2>Score:</h2>
+                <div id="scoreText" style="display: flex; justify-content: center; align-items: center; margin-top: 15px;">
+                    <div  style="display: flex; flex-direction: column; align-items: center; margin-right: 20px;">
+                        <div class="userScore" style="font-weight: bold; color: white; font-size: 25px;">0</div>
+                        <p style="font-weight: bold; color: white;">
+                            User:
+                        </p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; margin-right: 20px;">
+                        <div class="computerScore" style="font-weight: bold; color: white; font-size: 25px;">0</div>
+                        <p style="font-weight: bold; color: white;">
+                            Comp:
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button id="resetButton" style="margin-top: 20px; padding: 10px 20px; background-color: red; font-size: 16px; cursor: pointer; border: none; border-radius: 5px;  color: white;">Reset Game</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

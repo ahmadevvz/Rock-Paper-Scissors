@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family: "Share Tech", sans-serif;
+
+}
+body{
+    background: linear-gradient(to right, #00e1ff, #0400ff);
+}   
+h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.game-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.user-area{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.user-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.options button{
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      height: 150px;
+    width: 150px;
+}
+.options button:hover{
+    border: 3px solid black;
+}
+.options button img{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    pointer-events: none;
+
+}
+.comp-area{
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    display:flex;
+}
+#resultText{
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+color: #fff;
+font-weight:600;
+font-family:Arial, Helvetica, sans-serif;
+}
